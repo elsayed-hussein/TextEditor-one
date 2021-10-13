@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      href="data:image/jpeg;base64,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"
+    />
+  </head>
+  <body>
+    <div class="continuer">
+      <div class="btnList">
+        <div class="btn-a">
+          <div id="bold" class="btn"><i class="fas fa-bold"></i></div>
+          <div id="italic" class="btn"><i class="fas fa-italic"></i></div>
+          <div id="underLine" class="btn"><i class="fas fa-underline"></i></div>
+          <div id="left" class="btn"><i class="fas fa-align-left"></i></div>
+          <div id="center" class="btn">
+            <i class="fas fa-align-center"></i>
+          </div>
+          <div id="right" class="btn">
+            <i class="fas fa-align-right"></i>
+          </div>
+        </div>
+        <div class="munList">
+          <select name="fontFam" id="fontFam" onchange="changefam();">
+            <option>-- select font</option>
+            <option class="fontFam" id="sans-serif" value="sans-serif">
+              sans-serif
+            </option>
+            <option class="fontFam" id="serif" value="serif">serif</option>
+            <option class="fontFam" id="arial" value="arial">arial</option>
+            <option class="fontFam" id="fantasy" value="fantasy">
+              fantasy
+            </option>
+            <option class="fontFam" id="monospace" value="monospace">
+              monospace
+            </option>
+          </select>
+          <select name="fontSize" id="fontSize" onchange="changesiz();">
+            <option>-- select size</option>
+            <option class="fontSize" id="f10" value="10">10 px</option>
+            <option class="fontSize" id="f20" value="20">20 px</option>
+            <option class="fontSize" id="f30" value="30">30 px</option>
+            <option class="fontSize" id="f40" value="40">40 px</option>
+            <option class="fontSize" id="f50" value="50">50 px</option>
+            <option class="fontSize" id="f100" value="100">100 px</option>
+          </select>
+          <select name="fontCol" id="fontCol" onchange="changecol();">
+            <option>-- select color</option>
+            <option class="fontCol" id="black" value="black">Black</option>
+            <option class="fontCol" id="red" value="red">Red</option>
+            <option class="fontCol" id="green" value="green">Green</option>
+            <option class="fontCol" id="yellow" value="yellow">Yellow</option>
+            <option class="fontCol" id="blue" value="blue">Blue</option>
+          </select>
+        </div>
+      </div>
+      <div class="textArea">
+        <textarea class="" type="text" name="textArea" id="textArea"></textarea>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
